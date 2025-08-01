@@ -1,4 +1,4 @@
-function device=ZurichCV(~)
+function device=CV_Zurich_1(~)
 
 
 clear ziDAQ;
