@@ -3,6 +3,8 @@ device = 'dev5478';
 ziCreateAPISession(device, 5)
 % ziDAQ('connect','127.0.0.1', 8006, 5)
 % ziDAQ('listNodes', ['/' device ], 0)
+ziDAQ('listNodes', sprintf('/%s/imps', device), 1)
+ziDAQ('getByte', sprintf('/%s/features/options', device))
 
 % example_connect('dev5478')
 % example_connect_config('dev5478')
